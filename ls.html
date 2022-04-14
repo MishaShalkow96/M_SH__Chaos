@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M-SH__Chaos</title>
+  <script src="./js/ls.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="header">
+  <nav class="header_nav">
+    <div class="nav_block">
+      <h2 class="nav_block nav_block1__forum">Форум</h2>
+    </div>
+    <div class="nav_block">
+      <h2 class="nav_block nav_block2__aboutGame">Об игре</h2>
+    </div>
+    <div class="nav_block">
+      <h2 class="nav_block nav_block3__Registration">Регистрация</h2>
+    </div>
+    <button class="header_serv">Скачать</button>
+  </nav>
+</header>
+<main class="main-contains">
+  <a href="http://localhost:63342/sk/index2.html?_ijt=2si3eke4pj3o8ibhah0jv5qvkf&_ij_reload=RELOAD_ON_SAVE" class="logoLcHref"> <p class="logoLc">M-SH</p></a>
+  <div class="main_registrationScreen"></div>
+</main>
+<script>
+  const registrationScreen = document.querySelector('.main_registrationScreen')
+  const registrationForm = document.querySelector('.nav_block3__Registration');
+  function formR () {
+    const registration = () => {
+      registrationScreen.innerHTML = '<form id="formReg" class="form_registration" action="https://mail.google.com/mail/u/0/?pli=1#inbox" method="get" name="form" ' +
+              '<label for="name"><b class="enterN">Введите логин</b></label>' +
+              '<input class="style_registr" type="text" placeholder="qwerty" name="name" required>' +
+
+              '<label for="email"><b>Введите email адрес</b></label>' +
+              '<input class="style_registr" type="email" placeholder="test@gmail.com" name="email" required>' +
+
+              '<label for="passwod" class="password"><b>Введите пароль</b></label>' +
+              '<input class="style_registr" type="password" placeholder="1223456qwerty!@#$" name="password" required>' +
+
+              '<label for="repeatPassword" class="repeatPass"><b>Повторите пароль</b></label>' +
+              '<input class="style_registr" type="password" placeholder="1234qwerty!@#$" name="repeatPassword">' +
+              '<div class="errorPassword"></div> ' +
+
+              '<button type="submit" class="btn_registration">Зарегистрировать</button>' +
+              '<img class="closeForm" src="images/closeForm.png"> ' +
+              '</form>'
+    }
+
+    function setEventListener(el, f) {
+      if (el) {
+        el.addEventListener('click', f)
+      }
+    }
+
+    setEventListener(registrationForm, registration);
+  }
+  formR();
+
+  const Serv = document.querySelector('.header_serv');
+  const saveServ = () => {
+    Serv.addEventListener('click', () => {
+      registrationScreen.innerHTML = '<div class="loadGame">' +
+              '<div class="ServSav">Скачать</div>' +
+              '<a href="https://drive.google.com/drive/my-drive" class="styleServ"><div class="ServGoogleDisk">Скачать клиент с Google.disk</div></a>' +
+              '<a href="https://drive.google.com/drive/my-drive" class="styleServ"><div class="doalodServMega">Скачать клиент с Mega</div></a>' +
+              '</div>'
+    })
+  }
+  saveServ();
+</script>
+</body>
+</html>

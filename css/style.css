@@ -1,0 +1,119 @@
+@font-face {
+    src: url("../fonts/NunitoSans-Regular.ttf");
+    font-family: 'Main Sans';
+}
+
+body {
+    font-family: Main Sans;
+    background-color: #ffdbb2;
+}
+
+.logoLcHref {
+    text-decoration: none;
+    color: brown;
+}
+
+.logoLc {
+    font-family: Main Sans;
+    font-size: 30px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    cursor: default;
+}
+
+.header_serv {
+    font-family: Helvetica;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.header_serv:hover {
+    filter: brightness(120%);
+}
+
+.header_nav {
+    margin-top: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 30px;
+    background-color: #e7c8a2;
+}
+
+.nav_block {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.closeForm {
+    position: absolute;
+    width: 50px;
+    right: 520px;
+    top: 294px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+    style {
+        left: 10px;
+    }
+}
+
+.form_registration {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -140px;
+}
+
+.style_registr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.btn_registration {
+    padding: 20px;
+}
+
+b {
+    align-items: center;
+}
+
+.loadGame {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    margin-top: -200px;
+}
+
+.styleServ {
+    margin-top: 50px;
+    text-decoration: none;
+    color: brown;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.ServSav {
+    font-size: 50px;
+    margin-top: 50px;
+    color: brown;
+    cursor: default;
+}
+
+.ServGoogleDisk {
+
+}
+
+.doalodServMega {
+
+}
